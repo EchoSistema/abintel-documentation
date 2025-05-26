@@ -149,7 +149,7 @@ GET /api/v1/taskadmin/tasks/{task_id}?part=response
 
 ## 1.7 Typical Lifecycle
 
-```mermaid
+```
 sequenceDiagram
     Customer ->> Proxy /ai/... : POST payload
     Proxy ->> Cosmos DB : Save task (status="queued")
